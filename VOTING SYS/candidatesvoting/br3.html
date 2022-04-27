@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Candidates</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;500;900&display=swap');
+
+        *{
+            font-family: "Poppins", sans-serif;
+        }
+
+        html{
+            overflow-x: hidden;
+            scroll-padding-top: 9rem;
+            scroll-behavior: smooth;
+        }
+
+        body{
+            background-color: #f4f4f4;
+            overflow-x: hidden;
+        }
+
+        h2{
+            padding-top: 80px;
+            font-size: 3em;
+            text-align: center;
+        }
+
+        h1{
+            transition: 0.5s;
+        }
+
+        .candid .candids span{
+            color: rgb(226, 58, 58);
+            background-color: rgb(255, 255, 255);
+            width: 20em;
+            text-align: left;
+            border-radius: 0.3em;
+            font-size: 3em;
+            text-shadow: 3px 2px 1px rgba(-3, 12, 1, 1);
+
+        }
+
+        .navbar{
+            background-color: #c12026;
+            overflow: hidden;
+            height: 60px;
+        }
+
+        .navbar a{
+            float: left;
+            display: block;
+            padding: 14px 16px;
+
+        }
+
+        .navbar a:hover{
+            background-color: #ddd;
+            color: #000;
+        }
+
+        .side-nav{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            opacity: 0.9;
+            overflow-x:hidden ;
+            padding-top: 60px;
+            transition: 0.5s;
+
+        }
+
+        .side-nav a{
+            padding: 10px 10px 10px 30px;
+            text-decoration: none;
+            font-size: 100%;
+            color:#ccc;
+            display: block;
+            transition: 0.3s;
+
+        }
+
+        .side-nav a:hover{
+            color: #fff;    
+        }
+
+        .side-nav .btn-close{
+            position: absolute;
+            top: 0;
+            right: 22px;
+            font-size: 36px;
+            margin-left: 50px;
+
+        }
+
+        #main{
+            transition: margin-left 0.5s;
+            padding: 20px;
+            overflow: hidden;
+            width: 100%;
+        }
+
+
+        /* ------- 3br ------- */
+        .br3 .box-container{
+        margin-top: 5.5em;
+        display:  flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding-bottom: 30px;
+        }
+
+        .br3 .box-container .box{
+            text-align: center;
+            flex:1 1 30rem;
+            border-radius: .65rem;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 1rem 2rem rgba(0,0,0,.75);
+        }
+
+        .br3 .box-container .box img{
+            height: 15rem;
+            width:fit-content;
+            object-fit: cover;
+            padding-top: 30px;
+        }
+
+        .btn{
+            display: block;
+            width: 10rem;
+            height: 40px;
+            border-radius: 25px;
+            outline: none;
+            border: none;
+            background:#c12026;
+            background-size: 200%;
+            font-size: 1.2rem;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            margin: 1rem 0;
+            cursor: pointer;
+            transition: 0.5ms;
+            text-align: center;
+            padding-top: 10px;
+        }
+        .btn:hover{
+            background: #c71010;
+        }
+    </style>
+    
+    <body>
+        <nav class="navbar">
+            <span class="open-side">
+                <a href="#" onclick="openSideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                </a>
+            </span>
+        </nav>
+           <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSideMenu()">&times;<br></a>
+                <a href="/pres.html">President<br></a>
+                <a href="/ivp.html">Internal Vice President<br></a>
+                <a href="/evp.html">External Vice President<br></a>
+                <a href="/sg.html">Secretary General<br></a>
+                <a href="/tres.html">Treasurer<br></a>
+                <a href="/auds.html">Auditor<br></a>
+                <a href="/br4.html">4th Year Batch Rep<br></a>
+                <a href="/br3.html">3rd Year Batch Rep<br></a>
+                <a href="/br2.html">2nd Year Batch Rep<br></a>
+                <a href="/br1.html">1st Year Batch Rep<br></a>
+           </div>
+
+           <div class="candid" id="candid">
+               <h1 class="candids" id="candids"><span>Candidates</span></h1>
+           </div>
+
+           <script>
+               function openSideMenu(){
+                   document.getElementById('side-menu').style.width='250px';
+                   document.getElementById('candids').style.marginLeft='250px';
+               }
+
+               function closeSideMenu(){
+                   document.getElementById('side-menu').style.width='0';
+                   document.getElementById('candids').style.marginLeft='0';
+               }
+           </script>
+
+<!-- ---------- 3rd Yr Batch Reps ----------- -->
+        <section class="br3" id="br3">
+            <h2><span>3rd Year Batch Representatives</span></h2>
+            <div class="box-container">
+                <div class="box">
+                    <img src="css/images/TripleH.jfif" alt="">
+                    <div class="content">
+                        <span>NYP</span>
+                        <h3> 
+                            <input type="radio" name="br3" id="tripleh" value="TRIPLEH">
+                            <label for="tripleh">TripleH</label>
+                        </h3>                          
+                    </div>    
+                </div>
+                <div class="box">
+                    <img src="css/images/JohnCena.jfif" alt="">
+                    <div class="content">
+                        <span>Mithi</span>
+                        <h3>
+                            <input type="radio" name="br3" id="johnCena" value="JOHNCENA">
+                            <label for="johnCena">John Cena</label>
+                        </h3>                            
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="css/images/undertaker.jfif" alt="">
+                    <div class="content">
+                        <span>SBP</span>
+                        <h3>
+                            <input type="radio" name="br3" id="underTaker" value="UNDERTAKER">
+                            <label for="underTaker">Undertaker</label>
+                        </h3>                            
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="css/images/abstain.jfif" alt="">
+                    <div class="content">
+                        <span>Abstain</span>
+                        <h3>
+                            <input type="radio" name="br3" id="abstain" value="ABSTAIN">
+                            <label for="abstain">Abstain</label>
+                        </h3>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <a href="/br4.html" class="btn">Back</a>
+            <a href="/br2.html" class="btn">Next</a>
+       </section>
+    </body>
+</html>

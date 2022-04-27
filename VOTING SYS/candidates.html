@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Can-dede's</title>
+        <link rel="stylesheet" href="css/vote.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    
+    <body>
+        <nav class="navbar">
+            <span class="open-side">
+                <a href="#" onclick="openSideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                </a>
+            </span>
+        </nav>
+           <div id="side-menu" class="side-nav">
+                <a href="#" class="btn-close" onclick="closeSideMenu()">&times;<br></a>
+                <a href="#pres">President<br></a>
+                <a href="#ivp">Internal Vice President<br></a>
+                <a href="#evp">External Vice President<br></a>
+                <a href="#sg">Secretary General<br></a>
+                <a href="#tres">Treasurer<br></a>
+                <a href="#auds">Auditor<br></a>
+                <a href="#br4">4th Year Batch Rep<br></a>
+                <a href="#br3">3rd Year Batch Rep<br></a>
+                <a href="#br2">2nd Year Batch Rep<br></a>
+                <a href="#br1">1st Year Batch Rep<br></a>
+           </div>
+
+           <div class="candid" id="candid">
+               <h1 class="candids" id="candids"><span>Candidates</span></h1>
+           </div>
+
+           <script>
+               function openSideMenu(){
+                   document.getElementById('side-menu').style.width='250px';
+                   document.getElementById('candids').style.marginLeft='250px';
+               }
+
+               function closeSideMenu(){
+                   document.getElementById('side-menu').style.width='0';
+                   document.getElementById('candids').style.marginLeft='0';
+               }
+           </script>
+
+<!-- ---------- Presidents ----------- -->
+           <section class="pres" id="pres">
+                <h2><span>Presidents</span></h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="css/images/TripleH.jfif" alt="">
+                        <div class="content">
+                            <span>NYP</span>
+                            <h3> <input type="radio" name="" id="">TripleH</h3>
+                            
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <img src="css/images/JohnCena.jfif" alt="">
+                        <div class="content">
+                            <span>Mithi</span>
+                            <h3><input type="radio" name="" id="">John Cena</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/undertaker.jfif" alt="">
+                        <div class="content">
+                            <span>SBP</span>
+                            <h3><input type="radio" name="" id="">Undertaker</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/abstain.jfif" alt="">
+                        <div class="content">
+                            <h3><input type="radio" name="" id="">Abstain</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/Lance.png" alt="">
+                        <div class="content">
+                            <span>Pogi party</span>
+                            <h3><input type="radio" name="" id="">lance</h3>                            
+                        </div>
+                    </div>
+
+                </div>
+           </section>
+
+<!-- ---------- Internal Vice Presidents ----------- -->
+           <section class="ivp" id="ivp">
+                <h2><span>Internal Vice Presidents</span></h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="css/images/TripleH.jfif" alt="">
+                        <div class="content">
+                            <span>NYP</span>
+                            <h3> <input type="radio" name="" id="">TripleH</h3>
+                            
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <img src="css/images/JohnCena.jfif" alt="">
+                        <div class="content">
+                            <span>Mithi</span>
+                            <h3><input type="radio" name="" id="">John Cena</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/undertaker.jfif" alt="">
+                        <div class="content">
+                            <span>SBP</span>
+                            <h3><input type="radio" name="" id="">Undertaker</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/abstain.jfif" alt="">
+                        <div class="content">
+                            <h3><input type="radio" name="" id="">Abstain</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/Lance.png" alt="">
+                        <div class="content">
+                            <span>Pogi party</span>
+                            <h3><input type="radio" name="" id="">lance</h3>                            
+                        </div>
+                    </div>
+                </div>
+           </section>
+
+<!-- ---------- External Vice Presidents ----------- -->
+           <section class="evp" id="evp">
+                <h2><span>External Vice Presidents</span></h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="css/images/TripleH.jfif" alt="">
+                        <div class="content">
+                            <span>NYP</span>
+                            <h3> <input type="radio" name="" id="">TripleH</h3>
+                            
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <img src="css/images/JohnCena.jfif" alt="">
+                        <div class="content">
+                            <span>Mithi</span>
+                            <h3><input type="radio" name="" id="">John Cena</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/undertaker.jfif" alt="">
+                        <div class="content">
+                            <span>SBP</span>
+                            <h3><input type="radio" name="" id="">Undertaker</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/abstain.jfif" alt="">
+                        <div class="content">
+                            <h3><input type="radio" name="" id="">Abstain</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/Lance.png" alt="">
+                        <div class="content">
+                            <span>Pogi party</span>
+                            <h3><input type="radio" name="" id="">lance</h3>                            
+                        </div>
+                    </div>
+                </div>
+           </section>
+<!-- ---------- Secretary Generals ----------- -->
+           <section class="sg" id="sg">
+                <h2><span>Secretary General</span></h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="css/images/TripleH.jfif" alt="">
+                        <div class="content">
+                            <span>NYP</span>
+                            <h3> <input type="radio" name="" id="">TripleH</h3>
+                            
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <img src="css/images/JohnCena.jfif" alt="">
+                        <div class="content">
+                            <span>Mithi</span>
+                            <h3><input type="radio" name="" id="">John Cena</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/undertaker.jfif" alt="">
+                        <div class="content">
+                            <span>SBP</span>
+                            <h3><input type="radio" name="" id="">Undertaker</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/abstain.jfif" alt="">
+                        <div class="content">
+                            <h3><input type="radio" name="" id="">Abstain</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/Lance.png" alt="">
+                        <div class="content">
+                            <span>Pogi party</span>
+                            <h3><input type="radio" name="" id="">lance</h3>                            
+                        </div>
+                    </div>
+                </div>
+           </section>
+
+<!-- ---------- Treasurers ----------- -->
+           <section class="tres" id="tres">
+                <h2><span>Treasurers</span></h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="css/images/TripleH.jfif" alt="">
+                        <div class="content">
+                            <span>NYP</span>
+                            <h3> <input type="radio" name="" id="">TripleH</h3>
+                            
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <img src="css/images/JohnCena.jfif" alt="">
+                        <div class="content">
+                            <span>Mithi</span>
+                            <h3><input type="radio" name="" id="">John Cena</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/undertaker.jfif" alt="">
+                        <div class="content">
+                            <span>SBP</span>
+                            <h3><input type="radio" name="" id="">Undertaker</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/abstain.jfif" alt="">
+                        <div class="content">
+                            <h3><input type="radio" name="" id="">Abstain</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/Lance.png" alt="">
+                        <div class="content">
+                            <span>Pogi party</span>
+                            <h3><input type="radio" name="" id="">lance</h3>                            
+                        </div>
+                    </div>
+                </div>
+           </section>
+
+<!-- ---------- Auditors ----------- -->
+           <section class="auds" id="auds">
+                <h2><span>Auditors</span></h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="css/images/TripleH.jfif" alt="">
+                        <div class="content">
+                            <span>NYP</span>
+                            <h3> <input type="radio" name="" id="">TripleH</h3>
+                            
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <img src="css/images/JohnCena.jfif" alt="">
+                        <div class="content">
+                            <span>Mithi</span>
+                            <h3><input type="radio" name="" id="">John Cena</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/undertaker.jfif" alt="">
+                        <div class="content">
+                            <span>SBP</span>
+                            <h3><input type="radio" name="" id="">Undertaker</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/abstain.jfif" alt="">
+                        <div class="content">
+                            <h3><input type="radio" name="" id="">Abstain</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/Lance.png" alt="">
+                        <div class="content">
+                            <span>Pogi party</span>
+                            <h3><input type="radio" name="" id="">lance</h3>                            
+                        </div>
+                    </div>
+                </div>
+           </section>
+
+<!-- ---------- 4th Yr Batch Reps ----------- -->
+           <section class="br4" id="br4">
+                <h2><span>4th Year Batch Representatives</span></h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="css/images/TripleH.jfif" alt="">
+                        <div class="content">
+                            <span>NYP</span>
+                            <h3> <input type="radio" name="" id="">TripleH</h3>
+                            
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <img src="css/images/JohnCena.jfif" alt="">
+                        <div class="content">
+                            <span>Mithi</span>
+                            <h3><input type="radio" name="" id="">John Cena</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/undertaker.jfif" alt="">
+                        <div class="content">
+                            <span>SBP</span>
+                            <h3><input type="radio" name="" id="">Undertaker</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/abstain.jfif" alt="">
+                        <div class="content">
+                            <h3><input type="radio" name="" id="">Abstain</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/Lance.png" alt="">
+                        <div class="content">
+                            <span>Pogi party</span>
+                            <h3><input type="radio" name="" id="">lance</h3>                            
+                        </div>
+                    </div>
+                </div>
+           </section>
+
+<!-- ---------- 3rd Yr Batch Reps ----------- -->
+           <section class="br3" id="br3">
+                <h2><span>3rd Year Batch Representatives</span></h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="css/images/TripleH.jfif" alt="">
+                        <div class="content">
+                            <span>NYP</span>
+                            <h3> <input type="radio" name="" id="">TripleH</h3>
+                            
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <img src="css/images/JohnCena.jfif" alt="">
+                        <div class="content">
+                            <span>Mithi</span>
+                            <h3><input type="radio" name="" id="">John Cena</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/undertaker.jfif" alt="">
+                        <div class="content">
+                            <span>SBP</span>
+                            <h3><input type="radio" name="" id="">Undertaker</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/abstain.jfif" alt="">
+                        <div class="content">
+                            <h3><input type="radio" name="" id="">Abstain</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/Lance.png" alt="">
+                        <div class="content">
+                            <span>Pogi party</span>
+                            <h3><input type="radio" name="" id="">lance</h3>                            
+                        </div>
+                    </div>
+                </div>
+           </section>
+
+<!-- ---------- 2nd Yr Batch Reps ----------- -->
+           <section class="br2" id="br2">
+                <h2><span>2nd Year Batch Representatives</span></h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="css/images/TripleH.jfif" alt="">
+                        <div class="content">
+                            <span>NYP</span>
+                            <h3> <input type="radio" name="" id="">TripleH</h3>
+                            
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <img src="css/images/JohnCena.jfif" alt="">
+                        <div class="content">
+                            <span>Mithi</span>
+                            <h3><input type="radio" name="" id="">John Cena</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/undertaker.jfif" alt="">
+                        <div class="content">
+                            <span>SBP</span>
+                            <h3><input type="radio" name="" id="">Undertaker</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/abstain.jfif" alt="">
+                        <div class="content">
+                            <h3><input type="radio" name="" id="">Abstain</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/Lance.png" alt="">
+                        <div class="content">
+                            <span>Pogi party</span>
+                            <h3><input type="radio" name="" id="">lance</h3>                            
+                        </div>
+                    </div>
+                </div>
+           </section>
+
+<!-- ---------- 1st Yr Batch Reps ----------- -->
+           <section class="br1" id="br1">
+                <h2><span>1st Year Batch Representatives</span></h2>
+                <div class="box-container">
+                    <div class="box">
+                        <img src="css/images/TripleH.jfif" alt="">
+                        <div class="content">
+                            <span>NYP</span>
+                            <h3> <input type="radio" name="" id="">TripleH</h3>
+                            
+                        </div>    
+                    </div>
+                    <div class="box">
+                        <img src="css/images/JohnCena.jfif" alt="">
+                        <div class="content">
+                            <span>Mithi</span>
+                            <h3><input type="radio" name="" id="">John Cena</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/undertaker.jfif" alt="">
+                        <div class="content">
+                            <span>SBP</span>
+                            <h3><input type="radio" name="" id="">Undertaker</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/abstain.jfif" alt="">
+                        <div class="content">
+                            <h3><input type="radio" name="" id="">Abstain</h3>                            
+                        </div>
+                    </div>
+                    <div class="box">
+                        <img src="css/images/Lance.png" alt="">
+                        <div class="content">
+                            <span>Pogi party</span>
+                            <h3><input type="radio" name="" id="">lance</h3>                            
+                        </div>
+                    </div>
+                </div>
+           </section>
+    </body>
+
+
+</html>
